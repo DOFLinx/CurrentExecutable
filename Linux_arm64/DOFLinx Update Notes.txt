@@ -1,0 +1,23 @@
+1.04
+- Fix crashing of turning on colour LEDs if the Green / Blue ports go beyond the last output port by setting Red as the last output port
+- Add support for PacLED64 and Ultimate I/O.
+  Requires use of the Ultimarc script to secure ports via udev and the DOFLinx support program dplc
+- Clear the Pixelcade Pulse effects when shutting down
+- Add support for operating specific parameters to INI files
+- Add RGB and mono buttons, joystick and trackball illumination at game start to many MAME games
+
+
+1.03 12/11/25
+- Fix overflow and other strange errors errors with KEY_TO_OUTPUT_TIMER, KEY_TO_OUTPUT, KEY_TO_COLOUR_TOGGLE, OUTPUT_NOW_TIMER, BUTTONS_ON, FIXED_OUTPUTS, BUTTONS_ON_COLOUR, FIXED_OUTPUTS_COLOUR, ATTRACT_SETUP, LINK_ITEMs, LINK_BUTTONSs, and a few others for output ports > 127
+- Add LINK_BUT_TB1 and LINK_BUT_TB2 for RGB trackballs one and two
+- Add PIXELCADE_SCORE_DISPLAYS_P1 and _P2 to be able to manually set the displays for MAME P1 and P2 scores.  For most people the defaults will be OK.
+- Add detection of the main Pixelcade Pulse matrix size and use that to call size specific effects for items like MAME explosions, etc
+
+1.02 24/9/25
+
+1.01 11/5/25
+- Fix loading of KEY_TO_COLOUR, KEY_TO_COLOUR_TIMER, KEY_TO_COLOUR_TOGGLE, KEY_TO_OUTPUT, KEY_TO_OUTPUT_TIMER, RGB_MIN_TIME from *.MAME files
+- Mame plugin v4 adding MAME_PLUGIN_LOOPS= to adjust checking speed.  Default for Windows is 2, Linux is 4, increase this value if Mame seems slow, also decrease down toward 1 for "snappier" score checking
+
+1.00 25/4/2025
+Initial release.  Based off DOFLinx Windows version 8.25
