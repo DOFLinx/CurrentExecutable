@@ -1,11 +1,14 @@
-1.04
+1.04 3/1/26
 - Fix crashing of turning on colour LEDs if the Green / Blue ports go beyond the last output port by setting Red as the last output port
 - Add support for PacLED64 and Ultimate I/O.
   Requires use of the Ultimarc script to secure ports via udev and the DOFLinx support program dplc
 - Clear the Pixelcade Pulse effects when shutting down
 - Add support for operating specific parameters to INI files
 - Add RGB and mono buttons, joystick and trackball illumination at game start to many MAME games
-
+- Make Pixelcade LED attact marquees not trigger Pulse or mini screen
+- Fix KEY_TO_COMMAND= when its blank just to clear previous loadded commands
+- Fix loading of Pixelcade with DOFLinx marquee to stop Pulse effects
+- Get the Pixelcade bindPort for LED device from pixelcade.ini
 
 1.03 12/11/25
 - Fix overflow and other strange errors errors with KEY_TO_OUTPUT_TIMER, KEY_TO_OUTPUT, KEY_TO_COLOUR_TOGGLE, OUTPUT_NOW_TIMER, BUTTONS_ON, FIXED_OUTPUTS, BUTTONS_ON_COLOUR, FIXED_OUTPUTS_COLOUR, ATTRACT_SETUP, LINK_ITEMs, LINK_BUTTONSs, and a few others for output ports > 127

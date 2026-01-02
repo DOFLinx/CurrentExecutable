@@ -8,7 +8,12 @@
 - Modify B2S usage to only try to load and use animations if the BackGlass server is running
 - Ensure PS Pico devices load in unit number order
 - Add RGB and mono buttons, joystick and trackball illumination at game start to many MAME games
-
+- Add Pixelcade Pulse (addressable LED) effects to Pinball FX.  If you've got Pulse, this will just work when you load new FX files.
+- Fix the Mix RGB Colour tester to allow ports >64
+- Make Pixelcade LED attact marquees not trigger Pulse or mini screen
+- Fix KEY_TO_COMMAND= when its blank just to clear previous loadded commands
+- Fix loading of Pixelcade with DOFLinx marquee to stop Pulse effects
+- Get the Pixelcade bindPort for LED device from pixelcade.ini
 
 9.07 12/11/25
 - Add LINK_BUT_TB1 and LINK_BUT_TB2 for RGB trackballs one and two
