@@ -1,3 +1,10 @@
+1.05 8/1/26
+- Sort out Attract Mode commands for Pixelcade LED sub displays and Pulse
+- Fix Retroarch activation to only activate for FBNeo
+- Fix RGB undercab crash when no RGB devices are defined
+- Improve Attract Mode MORPH logic to avoid flooding the output controller with the number of updates after changes
+- Fix PS Pico command for 60 port change
+
 1.04 3/1/26
 - Fix crashing of turning on colour LEDs if the Green / Blue ports go beyond the last output port by setting Red as the last output port
 - Add support for PacLED64 and Ultimate I/O.

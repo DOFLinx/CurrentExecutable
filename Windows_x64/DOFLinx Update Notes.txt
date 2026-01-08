@@ -1,4 +1,9 @@
-9.08
+9.09
+- Fix RGB undercab crash when no RGB devices are defined
+- Improve Attract Mode MORPH logic to avoid flooding the output controller with the number of updates after changes
+
+
+9.08 04/01/26
 - Improve the setup UI adding B9-B16, Joysticks and trackball setup, emulator focus options, buttons to light at startup
 - Fix crashing of turning on colour LEDs if the Green / Blue ports go beyond the last output port by setting Red as the last output port
 - Clear the Pixelcade Pulse effects when shutting down
@@ -11,9 +16,10 @@
 - Add Pixelcade Pulse (addressable LED) effects to Pinball FX.  If you've got Pulse, this will just work when you load new FX files.
 - Fix the Mix RGB Colour tester to allow ports >64
 - Make Pixelcade LED attact marquees not trigger Pulse or mini screen
-- Fix KEY_TO_COMMAND= when its blank just to clear previous loadded commands
+- Fix KEY_TO_COMMAND= when its blank just to clear previous loaded commands
 - Fix loading of Pixelcade with DOFLinx marquee to stop Pulse effects
 - Get the Pixelcade bindPort for LED device from pixelcade.ini
+- Sort out Attract Mode commands for Pixelcade LED sub displays and Pulse
 
 9.07 12/11/25
 - Add LINK_BUT_TB1 and LINK_BUT_TB2 for RGB trackballs one and two
