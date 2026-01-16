@@ -1,3 +1,9 @@
+1.06
+- Fix bug where Mame credit monitoring was not being reset in between games
+- Make joysticks open and number in a more logical order.  Now DOFLinx joystick numbers are in the same order as Linux starting from 1.
+  So /dev/input/js0 = Joystick #1, /dev/input/js1 = Joystick #2 and so on.
+- Change the loading of buttons to allow assignment of input to joysticks that are not connected at the time of startup
+
 1.05 8/1/26
 - Sort out Attract Mode commands for Pixelcade LED sub displays and Pulse
 - Fix Retroarch activation to only activate for FBNeo
@@ -16,6 +22,7 @@
 - Fix KEY_TO_COMMAND= when its blank just to clear previous loadded commands
 - Fix loading of Pixelcade with DOFLinx marquee to stop Pulse effects
 - Get the Pixelcade bindPort for LED device from pixelcade.ini
+- Stop MAME FF_MSG running before the plugin is fully loaded (Galaxian issue with ROM startup)
 
 1.03 12/11/25
 - Fix overflow and other strange errors errors with KEY_TO_OUTPUT_TIMER, KEY_TO_OUTPUT, KEY_TO_COLOUR_TOGGLE, OUTPUT_NOW_TIMER, BUTTONS_ON, FIXED_OUTPUTS, BUTTONS_ON_COLOUR, FIXED_OUTPUTS_COLOUR, ATTRACT_SETUP, LINK_ITEMs, LINK_BUTTONSs, and a few others for output ports > 127

@@ -1,6 +1,8 @@
 9.09
 - Fix RGB undercab crash when no RGB devices are defined
 - Improve Attract Mode MORPH logic to avoid flooding the output controller with the number of updates after changes
+- Fix bug where Mame credit monitoring was not being reset in between games
+- Change the loading of buttons to allow assignment of input to joysticks that are not connected at the time of startup
 
 
 9.08 04/01/26
@@ -20,6 +22,7 @@
 - Fix loading of Pixelcade with DOFLinx marquee to stop Pulse effects
 - Get the Pixelcade bindPort for LED device from pixelcade.ini
 - Sort out Attract Mode commands for Pixelcade LED sub displays and Pulse
+- Stop MAME FF_MSG running before the plugin is fully loaded (Galaxian issue with ROM startup)
 
 9.07 12/11/25
 - Add LINK_BUT_TB1 and LINK_BUT_TB2 for RGB trackballs one and two
