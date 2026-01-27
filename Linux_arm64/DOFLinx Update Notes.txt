@@ -3,6 +3,9 @@
 - Make joysticks open and number in a more logical order.  Now DOFLinx joystick numbers are in the same order as Linux starting from 1.
   So /dev/input/js0 = Joystick #1, /dev/input/js1 = Joystick #2 and so on.
 - Change the loading of buttons to allow assignment of input to joysticks that are not connected at the time of startup
+- Fix case sensitivity of USES in MAME files
+- Enhance the logic for FBNeo memory reads for later games using little endian words
+- Add an optional score modifier for Pixelcade score format to allow for fast large scores like AfterBurner 2
 
 1.05 8/1/26
 - Sort out Attract Mode commands for Pixelcade LED sub displays and Pulse

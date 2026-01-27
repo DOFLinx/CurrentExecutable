@@ -3,7 +3,8 @@
 - Improve Attract Mode MORPH logic to avoid flooding the output controller with the number of updates after changes
 - Fix bug where Mame credit monitoring was not being reset in between games
 - Change the loading of buttons to allow assignment of input to joysticks that are not connected at the time of startup
-
+- Fix case sensitivity of USES in MAME files
+- Add an optional score modifier for Pixelcade score format to allow for fast large scores like AfterBurner 2
 
 9.08 04/01/26
 - Improve the setup UI adding B9-B16, Joysticks and trackball setup, emulator focus options, buttons to light at startup
