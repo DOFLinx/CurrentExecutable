@@ -1,4 +1,8 @@
-1.06
+1.07 28/1/26
+- Fix the Pixelcade score modifier
+- Fix Pixelcade MiniLCD for credits when connected to LED display
+
+1.06 27/1/26
 - Fix bug where Mame credit monitoring was not being reset in between games
 - Make joysticks open and number in a more logical order.  Now DOFLinx joystick numbers are in the same order as Linux starting from 1.
   So /dev/input/js0 = Joystick #1, /dev/input/js1 = Joystick #2 and so on.
