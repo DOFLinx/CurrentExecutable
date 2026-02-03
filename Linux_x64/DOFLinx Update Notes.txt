@@ -1,3 +1,6 @@
+1.08 3/2/26
+- Enhance the decode logic to handle FBNeo little endian when reading an odd number of bytes
+
 1.07 28/1/26
 - Fix the Pixelcade score modifier
 - Fix Pixelcade MiniLCD for credits when connected to LED display
