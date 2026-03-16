@@ -1,3 +1,11 @@
+
+1.09 16/3/26
+- More enhancements to FBNeo little endian for odd byte reads
+- Fix the logic for PIXELCADE_LCD_USE_NETWORK_ADDRESS=
+- Fix bug with Pixelcade sub displays for LED not displaying score when they should
+- Add logic to direct Mame explosion animations to either Pixelcade LED or LCD displays with a default logic and ability to override to specific displays with PIXELCADE_EXPLOSIONS_DISPLAYS=
+- Fix sending of score to Pixelcade 7 segment display due to incorrect URL
+
 1.08 3/2/26
 - Enhance the decode logic to handle FBNeo little endian when reading an odd number of bytes
 
