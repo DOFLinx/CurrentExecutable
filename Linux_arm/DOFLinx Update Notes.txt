@@ -1,4 +1,6 @@
-1.11
+1.12
+
+1.11 23/3/26
 - Enhance Mame file format
 
 1.09 16/3/26
