@@ -1,3 +1,5 @@
+1.11
+- Enhance Mame file format
 
 1.09 16/3/26
 - More enhancements to FBNeo little endian for odd byte reads

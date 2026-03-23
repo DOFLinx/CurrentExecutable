@@ -1,4 +1,13 @@
-9.11
+9.13
+- Add undercab MX lighting to all Pinball M tables
+- Enhance Mame file format
+
+9.12 21/3/26
+- Add [SHUTDOWN} commands to FX and LINX based emulators
+- Fix a crash with Attract Mode
+- Fix issue with some B2S backglass animations not working introduced in v9.08
+
+9.11 16/3/26
 - Fix bug with Pixelcade sub displays for LED not displaying score when they should
 - Add logic to direct Mame explosion animations to either Pixelcade LED or LCD displays with a default logic and ability to override to specific displays with PIXELCADE_EXPLOSIONS_DISPLAYS=
 - Add the displaying of connected devices and explosion devices in the Pixelcade test screen
@@ -6,7 +15,7 @@
 
 9.10 22/2/26
 - Fix the logic for PIXELCADE_LCD_USE_NETWORK_ADDRESS=
-- Reconise the MX Donny on the Dude's Cab for addressable LEDs
+- Recognise the MX Donny on the Dude's Cab for addressable LEDs
 
 9.09 13/2/26
 - Fix RGB undercab crash when no RGB devices are defined
