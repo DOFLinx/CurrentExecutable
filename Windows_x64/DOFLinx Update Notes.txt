@@ -1,11 +1,13 @@
-9.14
+9.14 29/3/26
+- Add a right-click menu item to warp DOFLinx to any screen and position.  With multi monitors on a cabinet it can be easier than dragging.  Especially for my 4 monitor cabinet with part of monitor #2 masked as a DMD.
+- Improve the robustness of the startup process for Pixelcade systems with the addition of a multi-retry background startup process in DOFLinx
 
 9.13 23/3/26
 - Add undercab MX lighting to all Pinball M tables
 - Enhance Mame file format
 
 9.12 21/3/26
-- Add [SHUTDOWN} commands to FX and LINX based emulators
+- Add [SHUTDOWN] commands to FX and LINX based emulators
 - Fix a crash with Attract Mode
 - Fix issue with some B2S backglass animations not working introduced in v9.08
 
