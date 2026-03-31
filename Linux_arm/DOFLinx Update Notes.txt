@@ -1,3 +1,6 @@
+1.13 31/3/26
+- Fix for background startup detection with Pixelcade and LED only systems
+
 1.12 29/3/26
 - Improve the robustness of the startup process for Pixelcade systems with the addition of a multi-retry background startup process in DOFLinx
 
