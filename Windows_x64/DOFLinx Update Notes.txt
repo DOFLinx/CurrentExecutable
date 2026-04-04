@@ -1,6 +1,8 @@
-9.15
+9.15 4/4/26
 - Fix for background startup detection with Pixelcade and LED only systems
-
+- Add new MAME memory monitoring ("A" series commands) to be able to increase the type of in game effects
+- Fix Round change, Hits reached
+- Make changes for Pinball FX3 -> Pinball FX Classic
 
 9.14 29/3/26
 - Add a right-click menu item to warp DOFLinx to any screen and position.  With multi monitors on a cabinet it can be easier than dragging.  Especially for my 4 monitor cabinet with part of monitor #2 masked as a DMD.
