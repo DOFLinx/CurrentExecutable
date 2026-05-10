@@ -1,3 +1,11 @@
+
+1.14 10/5/26
+- Add new MAME memory monitoring ("A" series commands) to be able to increase the type of in game effects
+- Fix Round change, Hits reached
+- Make the morphing of Pixelcade Pulse when in attract mode default to off.  Use PIXELCADE_ATTRACT_MORPH_PULSE=1 to in DOFLinx.ini to enable.
+- Fix background startup completion
+- Fix reading of some enhanced MAME files
+
 1.13 31/3/26
 - Fix for background startup detection with Pixelcade and LED only systems
 
