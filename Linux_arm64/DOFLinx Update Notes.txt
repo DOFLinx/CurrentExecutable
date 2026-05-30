@@ -1,3 +1,5 @@
+1.15 30/5/26
+- Fix issue where keys continues to be monitored and actioned after Retroarch FBNeo had exited.
 
 1.14 10/5/26
 - Add new MAME memory monitoring ("A" series commands) to be able to increase the type of in game effects
