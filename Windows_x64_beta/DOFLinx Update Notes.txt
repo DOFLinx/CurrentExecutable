@@ -1,6 +1,7 @@
 10.0
 - Set the background colour of the message box to light green when its a beta version for easy recognition
-- Set the background colour of the message box to pink and add a forced log message when running with builtin administrator prvilege for easy recognition
+- Set the background colour of the message box to yellow and add a forced log message when running with builtin administrator prvilege for easy recognition
+- Set the background colour of the message box to hot pink when a seious error has been logged
 - Move to DOFLinxMsg to .Net10 and a common code base for Win and Linux
 - I have retired the 32 bit version from the release zip, yell if you really need it, but I will ask the "why" question.
 - Fix DLL loading fail message to show correct DLL
@@ -10,6 +11,7 @@
   If you can't remember where it is then either do a search from Windows Explorer, or
   from a command prompt type, without thwe quotes "dir /S c:\DOFLinxTrigger.dll"
   and replace all instances with the new V3
+- Add DOFLinxTrigger version checking for Infected Mushroom Pinball
 
 
 9.17 10/5/26
