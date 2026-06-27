@@ -1,0 +1,83 @@
+2.0
+- Move to .Net10
+- Move to DOFLinxMsg to .Net10 and a common code base for Win and Linux
+- Make more use of code shared between platforms by creating a DOFLinx specific library, DOFLinxCommon.so
+- Drop loops to 1 when setting PIXELCADE_REPLACE_LED_MARQUEE_AFTER_ANIMATION=1
+
+
+1.15 30/5/26
+- Fix issue where keys continues to be monitored and actioned after Retroarch FBNeo had exited.
+
+1.14 10/5/26
+- Add new MAME memory monitoring ("A" series commands) to be able to increase the type of in game effects
+- Fix Round change, Hits reached
+- Make the morphing of Pixelcade Pulse when in attract mode default to off.  Use PIXELCADE_ATTRACT_MORPH_PULSE=1 to in DOFLinx.ini to enable.
+- Fix background startup completion
+- Fix reading of some enhanced MAME files
+
+1.13 31/3/26
+- Fix for background startup detection with Pixelcade and LED only systems
+
+1.12 29/3/26
+- Improve the robustness of the startup process for Pixelcade systems with the addition of a multi-retry background startup process in DOFLinx
+
+1.11 23/3/26
+- Enhance Mame file format
+
+1.09 16/3/26
+- More enhancements to FBNeo little endian for odd byte reads
+- Fix the logic for PIXELCADE_LCD_USE_NETWORK_ADDRESS=
+- Fix bug with Pixelcade sub displays for LED not displaying score when they should
+- Add logic to direct Mame explosion animations to either Pixelcade LED or LCD displays with a default logic and ability to override to specific displays with PIXELCADE_EXPLOSIONS_DISPLAYS=
+- Fix sending of score to Pixelcade 7 segment display due to incorrect URL
+
+1.08 3/2/26
+- Enhance the decode logic to handle FBNeo little endian when reading an odd number of bytes
+
+1.07 28/1/26
+- Fix the Pixelcade score modifier
+- Fix Pixelcade MiniLCD for credits when connected to LED display
+
+1.06 27/1/26
+- Fix bug where Mame credit monitoring was not being reset in between games
+- Make joysticks open and number in a more logical order.  Now DOFLinx joystick numbers are in the same order as Linux starting from 1.
+  So /dev/input/js0 = Joystick #1, /dev/input/js1 = Joystick #2 and so on.
+- Change the loading of buttons to allow assignment of input to joysticks that are not connected at the time of startup
+- Fix case sensitivity of USES in MAME files
+- Enhance the logic for FBNeo memory reads for later games using little endian words
+- Add an optional score modifier for Pixelcade score format to allow for fast large scores like AfterBurner 2
+
+1.05 8/1/26
+- Sort out Attract Mode commands for Pixelcade LED sub displays and Pulse
+- Fix Retroarch activation to only activate for FBNeo
+- Fix RGB undercab crash when no RGB devices are defined
+- Improve Attract Mode MORPH logic to avoid flooding the output controller with the number of updates after changes
+- Fix PS Pico command for 60 port change
+
+1.04 3/1/26
+- Fix crashing of turning on colour LEDs if the Green / Blue ports go beyond the last output port by setting Red as the last output port
+- Add support for PacLED64 and Ultimate I/O.
+  Requires use of the Ultimarc script to secure ports via udev and the DOFLinx support program dplc
+- Clear the Pixelcade Pulse effects when shutting down
+- Add support for operating specific parameters to INI files
+- Add RGB and mono buttons, joystick and trackball illumination at game start to many MAME games
+- Make Pixelcade LED attact marquees not trigger Pulse or mini screen
+- Fix KEY_TO_COMMAND= when its blank just to clear previous loadded commands
+- Fix loading of Pixelcade with DOFLinx marquee to stop Pulse effects
+- Get the Pixelcade bindPort for LED device from pixelcade.ini
+- Stop MAME FF_MSG running before the plugin is fully loaded (Galaxian issue with ROM startup)
+
+1.03 12/11/25
+- Fix overflow and other strange errors errors with KEY_TO_OUTPUT_TIMER, KEY_TO_OUTPUT, KEY_TO_COLOUR_TOGGLE, OUTPUT_NOW_TIMER, BUTTONS_ON, FIXED_OUTPUTS, BUTTONS_ON_COLOUR, FIXED_OUTPUTS_COLOUR, ATTRACT_SETUP, LINK_ITEMs, LINK_BUTTONSs, and a few others for output ports > 127
+- Add LINK_BUT_TB1 and LINK_BUT_TB2 for RGB trackballs one and two
+- Add PIXELCADE_SCORE_DISPLAYS_P1 and _P2 to be able to manually set the displays for MAME P1 and P2 scores.  For most people the defaults will be OK.
+- Add detection of the main Pixelcade Pulse matrix size and use that to call size specific effects for items like MAME explosions, etc
+
+1.02 24/9/25
+
+1.01 11/5/25
+- Fix loading of KEY_TO_COLOUR, KEY_TO_COLOUR_TIMER, KEY_TO_COLOUR_TOGGLE, KEY_TO_OUTPUT, KEY_TO_OUTPUT_TIMER, RGB_MIN_TIME from *.MAME files
+- Mame plugin v4 adding MAME_PLUGIN_LOOPS= to adjust checking speed.  Default for Windows is 2, Linux is 4, increase this value if Mame seems slow, also decrease down toward 1 for "snappier" score checking
+
+1.00 25/4/2025
+Initial release.  Based off DOFLinx Windows version 8.25
