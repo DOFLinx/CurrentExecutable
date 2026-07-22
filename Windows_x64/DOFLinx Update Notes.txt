@@ -1,3 +1,38 @@
+
+10.0 13/7/26
+- Set the background colour of the message box to light green when its a beta version for easy recognition
+- Set the background colour of the message box to yellow and add a forced log message when running with builtin administrator privilege for easy recognition
+- Set the background colour of the message box to hot pink when a serious error has been logged
+- Move to DOFLinxMsg to .Net10 and a common code base for Win and Linux
+- I have retired the 32 bit version from the release zip, yell if you really need it, but I will ask the "why" question.
+- Fix DLL loading fail message to show correct DLL
+- Make more use of code shared between platforms by creating a DOFLinx specific library, DOFLinxCommon.dll
+- Drop loops to 1 when setting PIXELCADE_REPLACE_LED_MARQUEE_AFTER_ANIMATION=1
+- Update DOFLinxTrigger to V3 and about 500x faster.  Replace DOFLinxTrigger.dll in your Pinball FX, Pinball FX Midnight (Pinball M) and Infected Mushroom Pinball folders
+  If you can't remember where it is then either do a search from Windows Explorer, or
+  from a command prompt type, without the quotes "dir /S c:\DOFLinxTrigger.dll"
+  and replace all instances with the new V3
+- Add DOFLinxTrigger version checking for Infected Mushroom Pinball
+
+9.17 10/5/26
+- Improve startup override processes
+- Fix reading of some enhanced MAME files
+
+9.16 1/5/26
+- Add undercab complex MX LEDs to Adventures Lara Croft, Borderlands Vault Hunter, Brothers in Arms, Battle Star Galactica, Charlie Brown Christmas, Crypt of the Necrodancer,
+  Curse Mummy,Doom, Dragons, Elvira and the Party Monsters, Exploding Kittens, Fallout, Garfield, Gloomhaven, Goat Simulator, Godzilla, Godzilla vs Kong, Grimm Tale,
+  Homeworld Journey to Hiigara, Knight Rider, Kong, Kung Fu Panda, My Little Pony, Noir, Pacific Rim, Peanuts Snoopy, Princess Bride, Samiurai's Vengence, Scared Stiff,
+  Secrets of Croft Manor, Sky Pirates, Star Trek Deep Space Nine, Star Trek Discovery, Star Trek Kelvin Timeline, Star Wars Classic Collectibles, Star Wars The Mandalorian,
+  Terrforming Mars, The ElderScrolls V Skyrim, Thor, Trolls, Vernes Mysterious Island, Addams Family, Banzai Run, Black Knight, Bride of Pinbot, Earth Shaker, Pin Bot,
+  STTNG, Swords of Fury, Taxi, Twilight Zone, Whirlwind, Who Dunnit, World Cup Soccer, World War Z, Wrath of the Elder Gods, Xena, Jurassic Mayhem, Fish Tales, Dr Dude,
+  No Good Gofers, Cirqus Voltaire, Funhouse, Space Station, Champion Pub, Hurricane, White Water, Black Rose, Party Zone, Theatre of Magic, Monster Bash, Medieval Madness,
+  JunkYard, WOP Champions, The Avengers, Infinity Gauntlet, Fear Itself, WW Hulk, Ant Man, BTTF, Biolab, CastleStorm, Civil War, Epic Quest, ET, Excalibur, Fantastic Four,
+  Super League, Jaws, Jurassic Park, Jurassic World, WOP A Force, Pasha, Rome, Secrets of the Deep, Son of Zeus, Sorcerers Lair, SP Butters, SP Super Sweet, Wild West,
+  Adventureland, Age of Ultron, Venom, Moon Knight, XMen, Ghost Rider, Dr Strange, Captain America, Wolverine, SW Rogue One, SW Rebels, SW Droids, SW SFA, SW Calrissian,
+  SW Mimban, SW Solo, SW Last Jedi, SW Might, SW Force Awakens, SW New Hope, SW Darth Vader, SW Clone Wars, SW Empire Strike Back, SW AhchTo, 
+- Make the morphing of Pixelcade Pulse when in attract mode default to off.  Use PIXELCADE_ATTRACT_MORPH_PULSE=1 to in DOFLinx.ini to enable.
+- Add support for Pinball FX tables Williams Diner, Comet and Fire
+
 9.15 4/4/26
 - Fix for background startup detection with Pixelcade and LED only systems
 - Add new MAME memory monitoring ("A" series commands) to be able to increase the type of in game effects

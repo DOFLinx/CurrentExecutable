@@ -1,3 +1,10 @@
+
+2.0 13/7/26
+- Move to .Net10
+- Move to DOFLinxMsg to .Net10 and a common code base for Win and Linux
+- Make more use of code shared between platforms by creating a DOFLinx specific library, DOFLinxCommon.so
+- Drop loops to 1 when setting PIXELCADE_REPLACE_LED_MARQUEE_AFTER_ANIMATION=1
+
 1.15 30/5/26
 - Fix issue where keys continues to be monitored and actioned after Retroarch FBNeo had exited.
 
