@@ -1,7 +1,14 @@
+10.01
+- Fix loading of a few sounds at fault in All_Pre.FX and All_Pre.Linx
+- Add support for Vestaboard via Pixelcade, startup message, high score at game startup, high score achieved, in game statistics (Galaga done adding to others as we go) 
+- New when a high score in MAME is achieved for #1, #2 or #3 output a message to Pixelcade LCD, Pulse and Vestaboard
+- Add tractor beam effect for Galaga to Vestaboard and more Pulse zones
+- New, support full arcade game names when Mame cannot deliver them or FBNeo is being used.  Loaded from ArcadeGameNames.txt
+
 
 10.0 13/7/26
 - Set the background colour of the message box to light green when its a beta version for easy recognition
-- Set the background colour of the message box to yellow and add a forced log message when running with builtin administrator privilege for easy recognition
+- Set the background colour of the message box to yellow and add a forced log message when running with built-in administrator privilege for easy recognition
 - Set the background colour of the message box to hot pink when a serious error has been logged
 - Move to DOFLinxMsg to .Net10 and a common code base for Win and Linux
 - I have retired the 32 bit version from the release zip, yell if you really need it, but I will ask the "why" question.
