@@ -1,10 +1,18 @@
-10.01
+
+
+10.02 20/8/26
+- Fix Galaxian coin / credit entry effects
+- New, handle Truxton P1/P2 selection
+- New, Tron added to the list of games supported
+- Fix, drop consecutive zero score reads from 20 to 10 for MAME to indicate a new game
+- New, Add DOF2DMD_EXENAME= to be set allowing other DMD solutions.  The default is DOF2DMD.exe
+
+10.01 8/6/26
 - Fix loading of a few sounds at fault in All_Pre.FX and All_Pre.Linx
 - Add support for Vestaboard via Pixelcade, startup message, high score at game startup, high score achieved, in game statistics (Galaga done adding to others as we go) 
 - New when a high score in MAME is achieved for #1, #2 or #3 output a message to Pixelcade LCD, Pulse and Vestaboard
 - Add tractor beam effect for Galaga to Vestaboard and more Pulse zones
 - New, support full arcade game names when Mame cannot deliver them or FBNeo is being used.  Loaded from ArcadeGameNames.txt
-
 
 10.0 13/7/26
 - Set the background colour of the message box to light green when its a beta version for easy recognition
