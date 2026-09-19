@@ -1,3 +1,7 @@
+10.03
+- Add about 2100 new MAME files
+- Changes to All_Pre.FX through work with BMajor, fix for Pixelcade Bumper3 animation, addition of a Launchball animation ready for all back glasses, stopping of all back glass animations
+  before a new ball is launched for better effect, addition of a ball drain animation ready for all back glasses.
 
 
 10.02 20/8/26

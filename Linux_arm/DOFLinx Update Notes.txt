@@ -1,4 +1,6 @@
-
+2.04 17/9/26
+- Add support for Pixelcade SideKick
+- Add about 2100 new MAME files
 
 2.03 20/8/26
 - Fix Galaxian coin / credit entry effects
