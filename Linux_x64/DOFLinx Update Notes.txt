@@ -1,3 +1,7 @@
+2.05 29/9/26
+- Fix MAME score resets while playing games
+- Check for the status od cheat at start of game
+
 2.04 17/9/26
 - Add support for Pixelcade SideKick
 - Add about 2100 new MAME files

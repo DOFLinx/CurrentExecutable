@@ -1,8 +1,12 @@
-10.03
+10.04 29/9/26
+- Fix MAME score resets while playing games
+- Check for the status od cheat at start of game
+
+10.03 20/9/26
 - Add about 2100 new MAME files
 - Changes to All_Pre.FX through work with BMajor, fix for Pixelcade Bumper3 animation, addition of a Launchball animation ready for all back glasses, stopping of all back glass animations
   before a new ball is launched for better effect, addition of a ball drain animation ready for all back glasses.
-
+- Updated FX files for the improved back glasses with thanks to BMajor, Bobba Fett, Secrets of the Deep, Spiderman, Han Solo, Wolverine
 
 10.02 20/8/26
 - Fix Galaxian coin / credit entry effects
