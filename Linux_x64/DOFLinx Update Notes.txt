@@ -1,6 +1,13 @@
+
+
+2.06 20/11/26
+- Fix, pause the TCP thread after sending a message to lower CPU usage.
+- New, add support for Pixelcade HDMI connected displays
+- New, Add more functions to DOFLinxCommon.dll /so (v3) , be sure to replace this file when upgrading
+
 2.05 29/9/26
 - Fix MAME score resets while playing games
-- Check for the status od cheat at start of game
+- Check for the status of cheat at start of game
 
 2.04 17/9/26
 - Add support for Pixelcade SideKick

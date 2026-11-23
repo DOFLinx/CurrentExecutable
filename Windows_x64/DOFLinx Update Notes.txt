@@ -1,6 +1,30 @@
+
+10.10 20/11/26
+- New, Add integration with PinMusic by BMajor
+  Start PinMusic when the PATH_PINMUSIC= parameter is set to the PinMusic folder
+  Forward FX, Midnight and IMP triggers to PinMusic
+  Add new FF_PINMUSIC action command that can be used in [COMMANDS] and [STARTUP] of FX and Linx files
+- New, Add more functions to DOFLinxCommon.dll /so (v3) , be sure to replace this file when upgrading
+- Fix, error that logged unnecessarily when shutting down if DOFLinxKeys had stopped
+- New, add support for Pixelcade HDMI connected displays
+
+10.06 4/11/26
+- New, Add NUDGE_PAUSE= where any device can be set to pause the acceleromter nudge for its run time plus an additional "settle" time in milliseconds.  The run time is for all toys except left and right flippers which trigger for both on and off events.
+  When set to for a device nudge will not be able to be triggered by the accelerometer for the device run time plus the settling time.
+  This is designed to stop your toys nudging your cabinet.
+  ie NUDGE_PAUSE=DV_SH,500,DV_LF,100,DV_RF,100 - will stop accellerometer nudge for the shaker run time plus half a second, right and left flipper on and off plus 100mS
+- Add a new device, DV_PLGR as the plunger for use with NUDGE_PAUSE= , this enables a delay to be added after the plunger returns so that sensitive nudge can be suspended.  ie NUDGE_PAUSE=DV_PLGR,100
+- New, Add the ability to use FF_RUN= in the [STARTUP] section of FX files
+
+10.05 23/10/2026
+- Fix, pause the TCP thread after sending a message to lower CPU usage.
+- New Pinball FX tables Judge Dredd, System Shock, Camp Bloodbrook
+- New Pinball FX Midnight tables, Elvira x 2, Judge Dredd
+- Fix 19xx.MAME to stop a load failure
+
 10.04 29/9/26
 - Fix MAME score resets while playing games
-- Check for the status od cheat at start of game
+- Check for the status of cheat at start of game
 
 10.03 20/9/26
 - Add about 2100 new MAME files
